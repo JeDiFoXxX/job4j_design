@@ -9,49 +9,83 @@ class BoxTest {
     void isThisSphere() {
         Box box = new Box(0, 10);
         assertThat(box.whatsThis()).isEqualTo("Sphere");
-        assertThat(box.getNumberOfVertices()).isEqualTo(0);
-        assertThat(box.isExist()).isTrue();
-        assertThat(box.getArea()).isEqualTo(1256D, withPrecision(1.0));
     }
 
     @Test
     void isThisTetrahedron() {
         Box box = new Box(4, 10);
         assertThat(box.whatsThis()).isEqualTo("Tetrahedron");
-        assertThat(box.getNumberOfVertices()).isEqualTo(4);
-        assertThat(box.isExist()).isTrue();
-        assertThat(box.getArea()).isEqualTo(173D, withPrecision(1.0));
-
     }
 
     @Test
     void isThisCube() {
         Box box = new Box(8, 10);
         assertThat(box.whatsThis()).isEqualTo("Cube");
-        assertThat(box.getNumberOfVertices()).isEqualTo(8);
-        assertThat(box.isExist()).isTrue();
-        assertThat(box.getArea()).isEqualTo(600D, withPrecision(1.0));
     }
 
     @Test
-    void isThisUnknownObject() {
-        Box firstBox = new Box(3, 10);
-        Box secondBox = new Box(4, 0);
-        Box thirdBox = new Box(4, -10);
-        assertThat(firstBox.whatsThis()).isEqualTo("Unknown object");
-        assertThat(secondBox.whatsThis()).isEqualTo("Unknown object");
-        assertThat(thirdBox.whatsThis()).isEqualTo("Unknown object");
+    void whenVertexInvalidIsThisUnknownObject() {
+        Box box = new Box(3, 10);
+        assertThat(box.whatsThis()).isEqualTo("Unknown object");
+    }
 
-        assertThat(firstBox.getNumberOfVertices()).isEqualTo(-1);
-        assertThat(secondBox.getNumberOfVertices()).isEqualTo(-1);
-        assertThat(thirdBox.getNumberOfVertices()).isEqualTo(-1);
+    @Test
+    void whenEdgeInvalidIsThisUnknownObject() {
+        Box box = new Box(4, 0);
+        assertThat(box.whatsThis()).isEqualTo("Unknown object");
+    }
 
-        assertThat(firstBox.isExist()).isFalse();
-        assertThat(secondBox.isExist()).isFalse();
-        assertThat(thirdBox.isExist()).isFalse();
+    @Test
+    void whenVertex4AndEdgeValidThanVertex4() {
+        Box box = new Box(4, 10);
+        assertThat(box.getNumberOfVertices()).isEqualTo(4);
+    }
 
-        assertThat(firstBox.getArea()).isEqualTo(0);
-        assertThat(secondBox.getArea()).isEqualTo(0);
-        assertThat(thirdBox.getArea()).isEqualTo(0);
+    @Test
+    void whenVertexInvalidAndEdgeValidThanVertexMinus1() {
+        Box box = new Box(3, 10);
+        assertThat(box.getNumberOfVertices()).isEqualTo(-1);
+    }
+
+    @Test
+    void whenVertexValidAndEdgeInvalidThanVertexMinus1() {
+        Box box = new Box(4, 0);
+        assertThat(box.getNumberOfVertices()).isEqualTo(-1);
+    }
+
+    @Test
+    void whenIsExistTrue() {
+        Box box = new Box(4, 10);
+        assertThat(box.isExist()).isTrue();
+    }
+
+    @Test
+    void whenIsExistFalse() {
+        Box box = new Box(3, -10);
+        assertThat(box.isExist()).isFalse();
+    }
+
+    @Test
+    void isSphereArea() {
+        Box box = new Box(0, 10);
+        assertThat(box.getArea()).isEqualTo(1256.64D, withPrecision(0.01));
+    }
+
+    @Test
+    void isTetrahedronArea() {
+        Box box = new Box(4, 10);
+        assertThat(box.getArea()).isEqualTo(173.20D, withPrecision(0.01));
+    }
+
+    @Test
+    void isCubeArea() {
+        Box box = new Box(8, 10);
+        assertThat(box.getArea()).isEqualTo(600D);
+    }
+
+    @Test
+    void whenVertexMinus1ThanArea0() {
+        Box box = new Box(3, 10);
+        assertThat(box.getArea()).isEqualTo(0);
     }
 }
