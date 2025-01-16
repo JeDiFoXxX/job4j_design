@@ -36,19 +36,19 @@ class BoxTest {
     }
 
     @Test
-    void whenVertex4AndEdgeValidThanVertex4() {
+    void whenVertex4AndEdgeValidThenVertex4() {
         Box box = new Box(4, 10);
         assertThat(box.getNumberOfVertices()).isEqualTo(4);
     }
 
     @Test
-    void whenVertexInvalidAndEdgeValidThanVertexMinus1() {
+    void whenVertexInvalidAndEdgeValidThenVertexMinus1() {
         Box box = new Box(3, 10);
         assertThat(box.getNumberOfVertices()).isEqualTo(-1);
     }
 
     @Test
-    void whenVertexValidAndEdgeInvalidThanVertexMinus1() {
+    void whenVertexValidAndEdgeInvalidThenVertexMinus1() {
         Box box = new Box(4, 0);
         assertThat(box.getNumberOfVertices()).isEqualTo(-1);
     }
@@ -84,7 +84,7 @@ class BoxTest {
     }
 
     @Test
-    void whenVertexMinus1ThanArea0() {
+    void whenVertexMinus1ThenArea0() {
         Box box = new Box(3, 10);
         assertThat(box.getArea()).isEqualTo(0);
     }
