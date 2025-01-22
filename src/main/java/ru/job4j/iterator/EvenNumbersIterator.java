@@ -13,15 +13,7 @@ public class EvenNumbersIterator implements Iterator<Integer> {
 
     @Override
     public boolean hasNext() {
-        boolean rsl = false;
-        for (int i = index; i < data.length; i++) {
-            if (data[i] % 2 == 0) {
-                index = i;
-                rsl = true;
-                break;
-            }
-        }
-        return rsl;
+        return findEven(this.index) >= 0;
     }
 
     @Override
@@ -29,6 +21,16 @@ public class EvenNumbersIterator implements Iterator<Integer> {
         if (!hasNext()) {
             throw new NoSuchElementException();
         }
-        return data[index++];
+        this.index = findEven(this.index);
+        return data[this.index++];
+    }
+
+    private int findEven(int start) {
+        for (int index = start; index < data.length; index++) {
+            if (data[index] % 2 == 0) {
+                return index;
+            }
+        }
+        return -1;
     }
 }
