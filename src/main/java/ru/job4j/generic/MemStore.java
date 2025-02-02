@@ -9,21 +9,12 @@ public final class MemStore<T extends Base> implements Store<T> {
 
     @Override
     public void add(T model) {
-        if (model.getId() != null) {
             storage.putIfAbsent(model.getId(), model);
-        }
     }
 
     @Override
     public boolean replace(String id, T model) {
-        return storage.entrySet().stream()
-                .filter(element -> element.getKey().equals(id))
-                .findFirst()
-                .map(element -> {
-                    storage.put(id, model);
-                    return true;
-                })
-                .orElse(false);
+        return storage.replace(id, storage.get(id), model);
     }
 
     @Override
@@ -33,10 +24,6 @@ public final class MemStore<T extends Base> implements Store<T> {
 
     @Override
     public T findById(String id) {
-        return storage.entrySet().stream()
-                .filter(element -> element.getKey().equals(id))
-                .findFirst()
-                .map(Map.Entry::getValue)
-                .orElse(null);
+        return storage.get(id);
     }
 }
