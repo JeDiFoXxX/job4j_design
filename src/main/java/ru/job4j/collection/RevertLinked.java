@@ -28,7 +28,7 @@ public class RevertLinked<T> implements Iterable<T> {
         }
         while (node != null) {
             nextNode = node.next;
-            node.next  = prevNode;
+            node.next = prevNode;
             prevNode = node;
             node = nextNode;
         }
@@ -37,7 +37,6 @@ public class RevertLinked<T> implements Iterable<T> {
     }
 
     @Override
-
     public Iterator<T> iterator() {
         return new Iterator<T>() {
             Node<T> node = head;
