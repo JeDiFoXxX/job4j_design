@@ -20,20 +20,20 @@ public class RevertLinked<T> implements Iterable<T> {
     }
 
     public boolean revert() {
-        if (head == null || head.next == null) {
-            return false;
+        boolean rsl = head != null && head.next != null;
+        if (rsl) {
+            Node<T> nextNode;
+            Node<T> prevNode = null;
+            Node<T> node = head;
+            while (node != null) {
+                nextNode = node.next;
+                node.next = prevNode;
+                prevNode = node;
+                node = nextNode;
+            }
+            head = prevNode;
         }
-        Node<T> nextNode;
-        Node<T> prevNode = null;
-        Node<T> node = head;
-        while (node != null) {
-            nextNode = node.next;
-            node.next = prevNode;
-            prevNode = node;
-            node = nextNode;
-        }
-        head = prevNode;
-        return true;
+        return rsl;
     }
 
     @Override
