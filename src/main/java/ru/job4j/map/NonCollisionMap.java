@@ -103,8 +103,7 @@ public class NonCollisionMap<K, V> implements SimpleMap<K, V> {
     }
 
     private boolean isKeyMatch(int index, K key) {
-        return table[index] != null && (Objects.hashCode(table[index].key) == Objects.hashCode(key)
-                && Objects.equals(table[index].key, key));
+        return Objects.hashCode(table[index].key) == Objects.hashCode(key) && Objects.equals(table[index].key, key);
     }
 
     private static class MapEntry<K, V> {
