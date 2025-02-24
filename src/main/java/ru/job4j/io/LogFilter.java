@@ -11,10 +11,17 @@ public class LogFilter {
         this.file = file;
     }
 
+    @SuppressWarnings("checkstyle:InnerAssignment")
     public List<String> filter() {
-        List<String> list = Collections.emptyList();
+        List<String> list = new ArrayList<>(Collections.emptyList());
         try (BufferedReader input = new BufferedReader(new FileReader(file))) {
-            list = input.lines().filter(line -> line.contains(" 404 ")).collect(Collectors.toList());
+            String read;
+            while ((read = input.readLine()) != null) {
+                String[] line = read.split(" ");
+                if (line[line.length - 2].equals("404")) {
+                    list.add(read);
+                }
+            }
         } catch (IOException e) {
             e.printStackTrace();
         }
