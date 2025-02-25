@@ -2,7 +2,6 @@ package ru.job4j.io;
 
 import java.io.*;
 import java.util.*;
-import java.util.stream.Collectors;
 
 public class LogFilter {
     private final String file;
@@ -11,14 +10,13 @@ public class LogFilter {
         this.file = file;
     }
 
-    @SuppressWarnings("checkstyle:InnerAssignment")
     public List<String> filter() {
         List<String> list = new ArrayList<>(Collections.emptyList());
         try (BufferedReader input = new BufferedReader(new FileReader(file))) {
             String read;
             while ((read = input.readLine()) != null) {
                 String[] line = read.split(" ");
-                if (line[line.length - 2].equals("404")) {
+                if (line.length > 1 && "404".equals(line[line.length - 2])) {
                     list.add(read);
                 }
             }
