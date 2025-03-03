@@ -21,7 +21,7 @@ public class Search {
     }
 
     private static void validateArgs(String[] args) {
-        if (args.length < 2) {
+        if (args.length != 2) {
             throw new IllegalArgumentException("Нужно передать два аргумента! Используй <DIRECTORY> <EXTENSION>");
         }
         Path path = Paths.get(args[0]);
