@@ -1,12 +1,8 @@
 package ru.job4j.io;
 
 import java.io.*;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.Scanner;
+import java.nio.file.*;
+import java.util.*;
 
 public class ConsoleChat {
     private static final String OUT = "закончить";
@@ -21,6 +17,8 @@ public class ConsoleChat {
     }
 
     public void run() {
+        validate(path);
+        validate(botAnswers);
         final List<String> log = new ArrayList<>();
         final List<String> listAnswers = readPhrases();
         Scanner scanner = new Scanner(System.in);
@@ -49,7 +47,6 @@ public class ConsoleChat {
     }
 
     private List<String> readPhrases() {
-        validate(botAnswers);
         List<String> list = Collections.emptyList();
         try (BufferedReader read = new BufferedReader(new FileReader("./data/".concat(botAnswers)))) {
             list = read.lines().toList();
@@ -60,7 +57,6 @@ public class ConsoleChat {
     }
 
     private void saveLog(List<String> log) {
-        validate(path);
         try (PrintWriter write = new PrintWriter(new BufferedWriter(new FileWriter("./data/".concat(path))))) {
             for (String string : log) {
                 write.print(string);
@@ -76,7 +72,7 @@ public class ConsoleChat {
             throw new IllegalArgumentException(String.format("Path is incorrect or %s is not a file.", fileName));
         }
         if (!fileName.endsWith(".txt")) {
-            throw new IllegalArgumentException("The file must have a .txt extension.");
+            throw new IllegalArgumentException(String.format("The file %s must have a .txt extension.", fileName));
         }
     }
 
