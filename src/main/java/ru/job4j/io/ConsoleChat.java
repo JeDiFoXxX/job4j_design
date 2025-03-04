@@ -21,27 +21,27 @@ public class ConsoleChat {
         validate(botAnswers);
         final List<String> log = new ArrayList<>();
         final List<String> listAnswers = readPhrases();
-        Scanner scanner = new Scanner(System.in);
         boolean active = true;
         boolean onOffBot = true;
-        while (active) {
-            String userMessage = scanner.nextLine().toLowerCase();
-            log.add("User: ".concat(userMessage).concat("\n"));
-            switch (userMessage) {
-                case STOP -> onOffBot = false;
-                case CONTINUE -> onOffBot = true;
-                case OUT -> {
-                    active = false;
-                    scanner.close();
-                }
-                default -> {
-                    if (onOffBot && !listAnswers.isEmpty()) {
-                        String botMessage = listAnswers.get((int) (Math.random() * listAnswers.size()));
-                        log.add("Bot: ".concat(botMessage).concat("\n"));
-                        System.out.println(botMessage);
+        try (BufferedReader reader = new BufferedReader(new InputStreamReader(System.in))) {
+            while (active) {
+                String userMessage = reader.readLine();
+                log.add("User: ".concat(userMessage).concat("\n"));
+                switch (userMessage) {
+                    case STOP -> onOffBot = false;
+                    case CONTINUE -> onOffBot = true;
+                    case OUT -> active = false;
+                    default -> {
+                        if (onOffBot && !listAnswers.isEmpty()) {
+                            String botMessage = listAnswers.get((int) (Math.random() * listAnswers.size()));
+                            log.add("Bot: ".concat(botMessage).concat("\n"));
+                            System.out.println(botMessage);
+                        }
                     }
                 }
             }
+        } catch (IOException e) {
+            e.printStackTrace();
         }
         saveLog(log);
     }
