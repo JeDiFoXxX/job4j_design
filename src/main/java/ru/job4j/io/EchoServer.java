@@ -3,6 +3,8 @@ package ru.job4j.io;
 import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class EchoServer {
     public static void main(String[] args) throws IOException {
@@ -13,8 +15,16 @@ public class EchoServer {
                      BufferedReader input = new BufferedReader(
                              new InputStreamReader(socket.getInputStream()))) {
                     output.write("HTTP/1.1 200 OK\r\n\r\n".getBytes());
-                    if (input.readLine().contains("msg=Bye")) {
-                        server.close();
+                    Pattern pattern = Pattern.compile("\\bmsg=\\S+\\b");
+                    Matcher matcher = pattern.matcher(input.readLine());
+                    if (matcher.find()) {
+                        String text = matcher.group();
+                        if (text.equals("msg=Exit")) {
+                            server.close();
+                        } else {
+                            String[] separatorText = text.split("=");
+                            output.write(separatorText[1].getBytes());
+                        }
                     }
                     output.flush();
                 }
