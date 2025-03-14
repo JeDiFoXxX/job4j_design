@@ -2,10 +2,33 @@ package ru.job4j.serialization;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-
+import jakarta.xml.bind.annotation.*;
 import java.util.Arrays;
 
-public record Worker(String name, Contact contact, double salary, String[] tasks, boolean active) {
+@XmlRootElement(name = "worker")
+@XmlAccessorType(XmlAccessType.FIELD)
+public final class Worker {
+    @XmlAttribute
+    private String name;
+    private Contact contact;
+    @XmlAttribute
+    private double salary;
+    @XmlElementWrapper(name = "tasks")
+    @XmlElement(name = "task")
+    private String[] tasks;
+    @XmlAttribute
+    private boolean active;
+
+    public Worker() { }
+
+    public Worker(String name, Contact contact, double salary, String[] tasks, boolean active) {
+        this.name = name;
+        this.contact = contact;
+        this.salary = salary;
+        this.tasks = tasks;
+        this.active = active;
+    }
+
     @Override
     public String toString() {
         return "Worker{"
