@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ru"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>SimpleQueue.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">job4j_design</a> &gt; <a href="index.source.html" class="el_package">ru.job4j.collection</a> &gt; <span class="el_source">SimpleQueue.java</span></div><h1>SimpleQueue.java</h1><pre class="source lang-java linenums">package ru.job4j.collection;
+
+import java.util.NoSuchElementException;
+
+<span class="fc" id="L5">public class SimpleQueue&lt;T&gt; {</span>
+<span class="fc" id="L6">    private final SimpleStack&lt;T&gt; input = new SimpleStack&lt;&gt;();</span>
+<span class="fc" id="L7">    private final SimpleStack&lt;T&gt; output = new SimpleStack&lt;&gt;();</span>
+    private T value;
+    private int indexPush;
+    private int indexPoll;
+
+    public T poll() {
+<span class="fc bfc" id="L13" title="All 2 branches covered.">        if (indexPush == 0) {</span>
+<span class="fc" id="L14">            throw new NoSuchElementException(&quot;Queue is empty&quot;);</span>
+        }
+<span class="fc bfc" id="L16" title="All 2 branches covered.">        while (indexPoll != indexPush) {</span>
+<span class="fc" id="L17">            output.push(input.pop());</span>
+<span class="fc" id="L18">            indexPoll++;</span>
+        }
+<span class="fc" id="L20">        value = output.pop();</span>
+<span class="fc" id="L21">        indexPoll--;</span>
+<span class="fc" id="L22">        indexPush--;</span>
+<span class="fc bfc" id="L23" title="All 2 branches covered.">        while (indexPoll &gt; 0) {</span>
+<span class="fc" id="L24">            input.push(output.pop());</span>
+<span class="fc" id="L25">            indexPoll--;</span>
+        }
+<span class="fc" id="L27">        return value;</span>
+    }
+
+    public void push(T value) {
+<span class="fc" id="L31">        input.push(value);</span>
+<span class="fc" id="L32">        indexPush++;</span>
+<span class="fc" id="L33">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>

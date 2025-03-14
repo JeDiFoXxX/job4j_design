@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ru"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Search.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">job4j_design</a> &gt; <a href="index.source.html" class="el_package">ru.job4j.io</a> &gt; <span class="el_source">Search.java</span></div><h1>Search.java</h1><pre class="source lang-java linenums">package ru.job4j.io;
+
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.List;
+import java.util.function.Predicate;
+
+<span class="nc" id="L10">public class Search {</span>
+    public static void main(String[] args) throws IOException {
+<span class="nc" id="L12">        validateArgs(args);</span>
+<span class="nc" id="L13">        Path start = Paths.get(args[0]);</span>
+<span class="nc" id="L14">        search(start, path -&gt; path.toFile().getName().endsWith(args[1])).forEach(System.out::println);</span>
+<span class="nc" id="L15">    }</span>
+
+    public static List&lt;Path&gt; search(Path root, Predicate&lt;Path&gt; condition) throws IOException {
+<span class="nc" id="L18">        SearchFiles searcher = new SearchFiles(condition);</span>
+<span class="nc" id="L19">        Files.walkFileTree(root, searcher);</span>
+<span class="nc" id="L20">        return searcher.getPaths();</span>
+    }
+
+    private static void validateArgs(String[] args) {
+<span class="nc bnc" id="L24" title="All 2 branches missed.">        if (args.length != 2) {</span>
+<span class="nc" id="L25">            throw new IllegalArgumentException(&quot;Нужно передать два аргумента! Используй &lt;DIRECTORY&gt; &lt;EXTENSION&gt;&quot;);</span>
+        }
+<span class="nc" id="L27">        Path path = Paths.get(args[0]);</span>
+<span class="nc" id="L28">        String extension = args[1];</span>
+<span class="nc bnc" id="L29" title="All 4 branches missed.">        if (!Files.exists(path) || !Files.isDirectory(path)) {</span>
+<span class="nc" id="L30">            throw new IllegalArgumentException(&quot;Указанная директория не существует или не является директорией: &quot;</span>
+                    + args[0]);
+        }
+<span class="nc bnc" id="L33" title="All 2 branches missed.">        if (!extension.startsWith(&quot;.&quot;)) {</span>
+<span class="nc" id="L34">            throw new IllegalArgumentException(&quot;Расширение должно начинаться с точки!&quot;);</span>
+        }
+<span class="nc" id="L36">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>

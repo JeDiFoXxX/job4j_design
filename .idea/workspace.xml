@@ -1,0 +1,1111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="57d132e9-c5e0-4a9d-89f5-844d0d1d4dcd" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/checkstyleidea-libs/readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/checkstyle-cachefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/checkstyle-checker.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/checkstyle-result.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ru/job4j/assertj/Box.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ru/job4j/assertj/SimpleConvert.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ru/job4j/collection/ForwardLinked$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ru/job4j/collection/ForwardLinked$Node.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ru/job4j/collection/ForwardLinked.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ru/job4j/collection/RevertLinked$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ru/job4j/collection/RevertLinked$Node.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ru/job4j/collection/RevertLinked.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ru/job4j/collection/SimpleArrayList$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ru/job4j/collection/SimpleArrayList.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ru/job4j/collection/SimpleLinked.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ru/job4j/collection/SimpleLinkedList$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ru/job4j/collection/SimpleLinkedList$Node.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ru/job4j/collection/SimpleLinkedList.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ru/job4j/collection/SimpleList.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ru/job4j/collection/SimpleQueue.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ru/job4j/collection/SimpleStack.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ru/job4j/generic/Base.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ru/job4j/generic/MemStore.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ru/job4j/generic/Role.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ru/job4j/generic/RoleStore.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ru/job4j/generic/Store.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ru/job4j/generic/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ru/job4j/generic/UserStore.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ru/job4j/generics/Animal.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ru/job4j/generics/Generics.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ru/job4j/generics/Predator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ru/job4j/generics/Tiger.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ru/job4j/io/Analysis.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ru/job4j/io/ArgsName.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ru/job4j/io/CSVReader.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ru/job4j/io/Config.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ru/job4j/io/ConsoleChat.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ru/job4j/io/ConsoleDemo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ru/job4j/io/Dir.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ru/job4j/io/EchoServer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ru/job4j/io/EvenNumberFile.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ru/job4j/io/LogFilter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ru/job4j/io/ResultFile.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ru/job4j/io/Search.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ru/job4j/io/SearchFiles.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ru/job4j/io/UsageLog4j.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ru/job4j/io/Zip.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ru/job4j/io/duplicates/DuplicatesFinder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ru/job4j/io/duplicates/DuplicatesVisitor.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ru/job4j/io/duplicates/FileProperty.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ru/job4j/iterator/ArrayIt.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ru/job4j/iterator/BackwardArrayIterator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ru/job4j/iterator/Balancer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ru/job4j/iterator/CyclicIterator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ru/job4j/iterator/EvenNumbersIterator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ru/job4j/iterator/FlatMap.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ru/job4j/iterator/ListUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ru/job4j/iterator/MatrixIterator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ru/job4j/iterator/NonNullIterator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ru/job4j/map/NonCollisionMap$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ru/job4j/map/NonCollisionMap$MapEntry.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ru/job4j/map/NonCollisionMap.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ru/job4j/map/SimpleMap.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ru/job4j/map/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ru/job4j/question/Analize.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ru/job4j/question/Info.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ru/job4j/question/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ru/job4j/serialization/Contact.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ru/job4j/serialization/JsonFormat.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ru/job4j/serialization/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ru/job4j/serialization/Worker.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ru/job4j/set/SimpleArraySet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ru/job4j/set/SimpleSet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ru/job4j/tree/SimpleTree.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ru/job4j/tree/Tree$Node.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/ru/job4j/tree/Tree.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/jacoco.exec" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/branchfc.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/branchnc.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/branchpc.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/bundle.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/class.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/down.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/greenbar.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/group.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/method.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/package.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/prettify.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/prettify.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/redbar.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/report.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/report.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/session.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/sort.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/sort.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/source.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/jacoco-resources/up.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/jacoco-sessions.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/jacoco.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/jacoco.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.assertj/Box.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.assertj/Box.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.assertj/SimpleConvert.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.assertj/SimpleConvert.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.assertj/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.assertj/index.source.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.collection/ForwardLinked$1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.collection/ForwardLinked$Node.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.collection/ForwardLinked.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.collection/ForwardLinked.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.collection/RevertLinked$1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.collection/RevertLinked$Node.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.collection/RevertLinked.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.collection/RevertLinked.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.collection/SimpleArrayList$1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.collection/SimpleArrayList.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.collection/SimpleArrayList.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.collection/SimpleLinkedList$1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.collection/SimpleLinkedList$Node.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.collection/SimpleLinkedList.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.collection/SimpleLinkedList.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.collection/SimpleQueue.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.collection/SimpleQueue.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.collection/SimpleStack.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.collection/SimpleStack.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.collection/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.collection/index.source.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.generic/Base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.generic/Base.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.generic/MemStore.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.generic/MemStore.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.generic/Role.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.generic/Role.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.generic/RoleStore.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.generic/RoleStore.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.generic/User.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.generic/User.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.generic/UserStore.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.generic/UserStore.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.generic/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.generic/index.source.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.generics/Animal.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.generics/Animal.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.generics/Generics.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.generics/Generics.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.generics/Predator.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.generics/Predator.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.generics/Tiger.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.generics/Tiger.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.generics/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.generics/index.source.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.io.duplicates/DuplicatesFinder.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.io.duplicates/DuplicatesFinder.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.io.duplicates/DuplicatesVisitor.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.io.duplicates/DuplicatesVisitor.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.io.duplicates/FileProperty.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.io.duplicates/FileProperty.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.io.duplicates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.io.duplicates/index.source.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.io/Analysis.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.io/Analysis.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.io/ArgsName.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.io/ArgsName.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.io/CSVReader.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.io/CSVReader.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.io/Config.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.io/Config.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.io/ConsoleChat.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.io/ConsoleChat.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.io/ConsoleDemo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.io/ConsoleDemo.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.io/Dir.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.io/Dir.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.io/EchoServer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.io/EchoServer.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.io/EvenNumberFile.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.io/EvenNumberFile.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.io/LogFilter.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.io/LogFilter.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.io/ResultFile.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.io/ResultFile.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.io/Search.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.io/Search.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.io/SearchFiles.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.io/SearchFiles.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.io/Zip.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.io/Zip.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.io/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.io/index.source.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.iterator/ArrayIt.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.iterator/ArrayIt.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.iterator/BackwardArrayIterator.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.iterator/BackwardArrayIterator.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.iterator/Balancer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.iterator/Balancer.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.iterator/CyclicIterator.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.iterator/CyclicIterator.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.iterator/EvenNumbersIterator.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.iterator/EvenNumbersIterator.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.iterator/FlatMap.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.iterator/FlatMap.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.iterator/ListUtils.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.iterator/ListUtils.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.iterator/MatrixIterator.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.iterator/MatrixIterator.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.iterator/NonNullIterator.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.iterator/NonNullIterator.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.iterator/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.iterator/index.source.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.map/NonCollisionMap$1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.map/NonCollisionMap$MapEntry.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.map/NonCollisionMap.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.map/NonCollisionMap.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.map/User.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.map/User.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.map/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.map/index.source.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.question/Analize.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.question/Analize.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.question/Info.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.question/Info.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.question/User.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.question/User.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.question/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.question/index.source.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.set/SimpleArraySet.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.set/SimpleArraySet.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.set/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.set/index.source.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.tree/SimpleTree.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.tree/SimpleTree.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.tree/Tree$Node.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.tree/Tree.java.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.tree/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/site/jacoco/ru.job4j.tree/index.source.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-ru.job4j.assertj.BoxTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-ru.job4j.assertj.NameLoadTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-ru.job4j.assertj.SimpleConvertTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-ru.job4j.collection.ForwardLinkedTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-ru.job4j.collection.RevertLinkedTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-ru.job4j.collection.SimpleArrayListTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-ru.job4j.collection.SimpleLinkedListTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-ru.job4j.collection.SimpleQueueTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-ru.job4j.collection.SimpleStackTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-ru.job4j.generic.RoleStoreTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-ru.job4j.generic.UserStoreTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-ru.job4j.io.AnalysisTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-ru.job4j.io.ArgsNameTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-ru.job4j.io.CSVReaderTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-ru.job4j.io.ConfigTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-ru.job4j.iterator.ArrayItTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-ru.job4j.iterator.BackwardArrayIteratorTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-ru.job4j.iterator.BalancerTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-ru.job4j.iterator.CyclicIteratorTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-ru.job4j.iterator.EvenNumbersIteratorTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-ru.job4j.iterator.FlatMapTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-ru.job4j.iterator.ListUtilsTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-ru.job4j.iterator.MatrixIteratorTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-ru.job4j.iterator.NonNullIteratorTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-ru.job4j.map.NonCollisionMapTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-ru.job4j.question.AnalizeTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-ru.job4j.set.SimpleArraySetTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-ru.job4j.tree.SimpleTreeTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/ru.job4j.assertj.BoxTest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/ru.job4j.assertj.NameLoadTest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/ru.job4j.assertj.SimpleConvertTest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/ru.job4j.collection.ForwardLinkedTest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/ru.job4j.collection.RevertLinkedTest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/ru.job4j.collection.SimpleArrayListTest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/ru.job4j.collection.SimpleLinkedListTest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/ru.job4j.collection.SimpleQueueTest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/ru.job4j.collection.SimpleStackTest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/ru.job4j.generic.RoleStoreTest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/ru.job4j.generic.UserStoreTest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/ru.job4j.io.AnalysisTest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/ru.job4j.io.ArgsNameTest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/ru.job4j.io.CSVReaderTest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/ru.job4j.io.ConfigTest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/ru.job4j.iterator.ArrayItTest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/ru.job4j.iterator.BackwardArrayIteratorTest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/ru.job4j.iterator.BalancerTest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/ru.job4j.iterator.CyclicIteratorTest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/ru.job4j.iterator.EvenNumbersIteratorTest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/ru.job4j.iterator.FlatMapTest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/ru.job4j.iterator.ListUtilsTest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/ru.job4j.iterator.MatrixIteratorTest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/ru.job4j.iterator.NonNullIteratorTest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/ru.job4j.map.NonCollisionMapTest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/ru.job4j.question.AnalizeTest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/ru.job4j.set.SimpleArraySetTest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/ru.job4j.tree.SimpleTreeTest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/ru/job4j/assertj/BoxTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/ru/job4j/assertj/NameLoad.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/ru/job4j/assertj/NameLoadTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/ru/job4j/assertj/SimpleConvertTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/ru/job4j/collection/ForwardLinkedTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/ru/job4j/collection/RevertLinkedTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/ru/job4j/collection/SimpleArrayListTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/ru/job4j/collection/SimpleLinkedListTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/ru/job4j/collection/SimpleQueueTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/ru/job4j/collection/SimpleStackTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/ru/job4j/generic/RoleStoreTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/ru/job4j/generic/UserStoreTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/ru/job4j/io/AnalysisTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/ru/job4j/io/ArgsNameTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/ru/job4j/io/CSVReaderTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/ru/job4j/io/ConfigTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/ru/job4j/io/Search.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/ru/job4j/io/SearchFiles.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/ru/job4j/iterator/ArrayItTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/ru/job4j/iterator/BackwardArrayIteratorTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/ru/job4j/iterator/BalancerTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/ru/job4j/iterator/CyclicIteratorTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/ru/job4j/iterator/EvenNumbersIteratorTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/ru/job4j/iterator/FlatMapTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/ru/job4j/iterator/ListUtilsTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/ru/job4j/iterator/MatrixIteratorTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/ru/job4j/iterator/NonNullIteratorTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/ru/job4j/map/NonCollisionMapTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/ru/job4j/question/AnalizeTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/ru/job4j/set/SimpleArraySetTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/ru/job4j/tree/SimpleTreeTest.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="JUnit5 Test Class" />
+        <option value="Record" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;JeDiFoXxX&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:/JeDiFoXxX/job4j_design.git&quot;,
+    &quot;accountId&quot;: &quot;bfe7f3f4-107d-4759-9e1b-be03f00a2188&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2rZEFmmTzMTyJwjBp5suO4fNd4a" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Analysis.executor": "Run",
+    "Application.ArgsName.executor": "Run",
+    "Application.Balancer.executor": "Run",
+    "Application.CSVReader.executor": "Run",
+    "Application.Config.executor": "Run",
+    "Application.ConsoleChat.executor": "Run",
+    "Application.Contact.executor": "Run",
+    "Application.Dir.executor": "Run",
+    "Application.DuplicatesFinder.executor": "Run",
+    "Application.EchoServer.executor": "Run",
+    "Application.FlatMap.executor": "Run",
+    "Application.Generics.executor": "Run",
+    "Application.JsonFormat.executor": "Run",
+    "Application.ListToMap.executor": "Debug",
+    "Application.LogFilter.executor": "Run",
+    "Application.Main.executor": "Run",
+    "Application.NonCollisionMap.executor": "Run",
+    "Application.Search.executor": "Debug",
+    "Application.UsageLog4j.executor": "Run",
+    "Application.User.executor": "Run",
+    "Application.Worker.executor": "Run",
+    "Application.Zip.executor": "Run",
+    "JUnit.AnalizeTest.executor": "Run",
+    "JUnit.AnalizeTest.whenAllChanged.executor": "Run",
+    "JUnit.AnalizeTest.whenAllChanged2nok0.executor": "Debug",
+    "JUnit.AnalizeTest.whenNotChanged.executor": "Run",
+    "JUnit.AnalizeTest.whenOneChanged.executor": "Debug",
+    "JUnit.AnalizeTest.whenOneDeleted.executor": "Debug",
+    "JUnit.AnalysisTest.executor": "Run",
+    "JUnit.AnalysisTest.unavailable.executor": "Run",
+    "JUnit.ArgsNameTest.executor": "Run",
+    "JUnit.ArgsNameTest.whenNoHyphenPrefixThenExceptionThrown.executor": "Debug",
+    "JUnit.ArgsNameTest.whenStringDoesNotContainKeyThenExceptionThrown.executor": "Debug",
+    "JUnit.ArgsNameTest.whenThereNoEqualSignThenExceptionThrown.executor": "Debug",
+    "JUnit.ArrayItTest.executor": "Debug",
+    "JUnit.BackwardArrayIteratorTest.executor": "Run",
+    "JUnit.BalancerTest.executor": "Run",
+    "JUnit.BalancerTest.whenThreeListsAndIteratorEmpty.executor": "Debug",
+    "JUnit.BalancerTest.whenThreeListsAndIteratorThree.executor": "Debug",
+    "JUnit.BalancerTest.whenTwoListsAndIteratorThree.executor": "Debug",
+    "JUnit.BoxTest.executor": "Debug",
+    "JUnit.BoxTest.isCubeArea.executor": "Run",
+    "JUnit.BoxTest.isSphereArea.executor": "Run",
+    "JUnit.BoxTest.isThisCube.executor": "Debug",
+    "JUnit.BoxTest.isThisSphere.executor": "Debug",
+    "JUnit.BoxTest.isThisTetrahedron.executor": "Debug",
+    "JUnit.BoxTest.whenEdgeInvalidIsThisUnknownObject.executor": "Debug",
+    "JUnit.CSVReaderTest.executor": "Run",
+    "JUnit.CSVReaderTest.whenFilterThreeColumns.executor": "Run",
+    "JUnit.CSVReaderTest.whenFilterTwoColumns.executor": "Debug",
+    "JUnit.ConfigTest.executor": "Run",
+    "JUnit.ConfigTest.whenCommentWithoutPair.executor": "Run",
+    "JUnit.ConfigTest.whenLineHas2EqualSignsAndCommentAndEmptyLine.executor": "Run",
+    "JUnit.ConfigTest.whenPairWithoutComment.executor": "Run",
+    "JUnit.ConfigTest.whenPairWithoutEqualSign.executor": "Run",
+    "JUnit.ConfigTest.whenPairWithoutKey.executor": "Run",
+    "JUnit.ConfigTest.whenPairWithoutKeyAndValue.executor": "Run",
+    "JUnit.ConfigTest.whenPairWithoutValue.executor": "Run",
+    "JUnit.CyclicIteratorTest.executor": "Run",
+    "JUnit.CyclicIteratorTest.whenEmptyThenHasNextIsFalse.executor": "Debug",
+    "JUnit.EvenNumbersIteratorTest.allNumbersAreEven.executor": "Debug",
+    "JUnit.EvenNumbersIteratorTest.executor": "Run",
+    "JUnit.EvenNumbersIteratorTest.shouldReturnEvenNumbersSequentially.executor": "Debug",
+    "JUnit.EvenNumbersIteratorTest.shouldReturnFalseIfNoAnyEvenNumbers.executor": "Run",
+    "JUnit.EvenNumbersIteratorTest.shouldReturnFalseIfNoAnyNumbers.executor": "Debug",
+    "JUnit.FlatMapTest.executor": "Run",
+    "JUnit.FlatMapTest.whenDiffNext.executor": "Debug",
+    "JUnit.FlatMapTest.whenEmpty.executor": "Debug",
+    "JUnit.FlatMapTest.whenHasNextFalse.executor": "Debug",
+    "JUnit.FlatMapTest.whenMultiHasNext.executor": "Debug",
+    "JUnit.FlatMapTest.whenSeqNext.executor": "Debug",
+    "JUnit.ForwardLinkedTest.executor": "Run",
+    "JUnit.ListUtilsTest.executor": "Run",
+    "JUnit.ListUtilsTest.whenAddAfter.executor": "Run",
+    "JUnit.ListUtilsTest.whenAddAfter2.executor": "Debug",
+    "JUnit.ListUtilsTest.whenAddAfterWithInvalidIndex.executor": "Run",
+    "JUnit.ListUtilsTest.whenAddBefore.executor": "Run",
+    "JUnit.ListUtilsTest.whenAddBeforeWithInvalidIndex.executor": "Run",
+    "JUnit.ListUtilsTest.whenRemoveAll.executor": "Debug",
+    "JUnit.ListUtilsTest.whenRemoveIf.executor": "Run",
+    "JUnit.ListUtilsTest.whenReplaceIf.executor": "Run",
+    "JUnit.MatrixIteratorTest.executor": "Run",
+    "JUnit.MatrixIteratorTest.whenFewEmpty.executor": "Debug",
+    "JUnit.MatrixIteratorTest.whenFirstEmptyThenNext.executor": "Debug",
+    "JUnit.MatrixIteratorTest.whenRowHasDiffSize.executor": "Run",
+    "JUnit.NameLoadTest.checkDoubleValue.executor": "Run",
+    "JUnit.NameLoadTest.checkEmpty.executor": "Run",
+    "JUnit.NameLoadTest.executor": "Run",
+    "JUnit.NameLoadTest.whenNameDoesNotContainKey.executor": "Run",
+    "JUnit.NameLoadTest.whenNamesArrayIsEmpty.executor": "Run",
+    "JUnit.NonCollisionMapTest.checkSimpleIterator.executor": "Run",
+    "JUnit.NonCollisionMapTest.executor": "Run",
+    "JUnit.NonCollisionMapTest.whenCheckGet.executor": "Debug",
+    "JUnit.NonCollisionMapTest.whenCheckGetKeyNull.executor": "Debug",
+    "JUnit.NonCollisionMapTest.whenCheckGetNullAndZero.executor": "Run",
+    "JUnit.NonCollisionMapTest.whenCheckGetZeroAndNull.executor": "Debug",
+    "JUnit.NonCollisionMapTest.whenCheckIterator.executor": "Run",
+    "JUnit.NonCollisionMapTest.whenCheckPut.executor": "Run",
+    "JUnit.NonCollisionMapTest.whenCheckPutKeyNull.executor": "Run",
+    "JUnit.NonCollisionMapTest.whenCheckPutNullAndZero.executor": "Run",
+    "JUnit.NonCollisionMapTest.whenCheckPutZeroAndNull.executor": "Run",
+    "JUnit.NonCollisionMapTest.whenCheckRemove.executor": "Run",
+    "JUnit.NonCollisionMapTest.whenMapExpand.executor": "Debug",
+    "JUnit.NonCollisionMapTest.whenNotConcurrentIteratorGet.executor": "Run",
+    "JUnit.NonNullIteratorTest.executor": "Run",
+    "JUnit.NonNullIteratorTest.shouldReturnNotNullElementsSequentially.executor": "Debug",
+    "JUnit.RevertLinkedTest.executor": "Run",
+    "JUnit.RevertLinkedTest.myTest.executor": "Debug",
+    "JUnit.RevertLinkedTest.whenAddAndRevertTrue.executor": "Run",
+    "JUnit.SimpleArrayListTest.executor": "Run",
+    "JUnit.SimpleArrayListTest.whenAddAfterGetIteratorHasNextThenMustBeException.executor": "Debug",
+    "JUnit.SimpleArrayListTest.whenIncreaseEmptyContainer.executor": "Debug",
+    "JUnit.SimpleArraySetTest.executor": "Run",
+    "JUnit.SimpleConvertTest.checkList.executor": "Run",
+    "JUnit.SimpleConvertTest.checkMap.executor": "Run",
+    "JUnit.SimpleConvertTest.checkSet.executor": "Run",
+    "JUnit.SimpleConvertTest.executor": "Run",
+    "JUnit.SimpleQueueTest.executor": "Run",
+    "JUnit.SimpleQueueTest.whenPushPoll.executor": "Debug",
+    "JUnit.SimpleStackTest.executor": "Run",
+    "JUnit.SimpleStackTest.whenPushPollThenPushPoll.executor": "Debug",
+    "JUnit.SimpleStackTest.whenPushThenPoll.executor": "Debug",
+    "JUnit.SimpleTreeTest.executor": "Run",
+    "JUnit.SimpleTreeTest.whenTreeIsBinary.executor": "Run",
+    "JUnit.SimpleTreeTest.whenTreeIsNonBinary.executor": "Run",
+    "JUnit.UserStoreTest.executor": "Run",
+    "Maven.job4j_design [test].executor": "Run",
+    "Maven.job4j_design [validate].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "deletionFromPopupRequiresConfirmation": "false",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/projects/job4j_design/checkstyle.xml",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "org.infernus.idea.checkstyle.CheckStyleConfigurable"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\projects\job4j_design" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="ru.job4j.io" />
+      <recent name="ru.job4j.question" />
+      <recent name="ru.job4j.tree" />
+      <recent name="ru.job4j.map" />
+      <recent name="ru.job4j.iterator" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.JsonFormat">
+    <configuration name="Contact" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.job4j.serialization.Contact" />
+      <module name="job4j_design" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.job4j.serialization.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EchoServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.job4j.io.EchoServer" />
+      <module name="job4j_design" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.job4j.io.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JsonFormat" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.job4j.serialization.JsonFormat" />
+      <module name="job4j_design" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.job4j.serialization.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.job4j.serialization.Main" />
+      <module name="job4j_design" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.job4j.serialization.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Worker" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.job4j.serialization.Worker" />
+      <module name="job4j_design" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.job4j.serialization.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.JsonFormat" />
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.Worker" />
+      <item itemvalue="Application.Contact" />
+      <item itemvalue="Application.EchoServer" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.JsonFormat" />
+        <item itemvalue="Application.Contact" />
+        <item itemvalue="Application.Worker" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.EchoServer" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="57d132e9-c5e0-4a9d-89f5-844d0d1d4dcd" name="Changes" comment="" />
+      <created>1736758095547</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1736758095547</updated>
+    </task>
+    <task id="LOCAL-00056" summary="Анализ доступности сервера">
+      <option name="closed" value="true" />
+      <created>1740409765147</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1740409765147</updated>
+    </task>
+    <task id="LOCAL-00057" summary="Анализ доступности сервера">
+      <option name="closed" value="true" />
+      <created>1740410910222</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1740410910222</updated>
+    </task>
+    <task id="LOCAL-00058" summary="BufferedReader">
+      <option name="closed" value="true" />
+      <created>1740468051295</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1740468051295</updated>
+    </task>
+    <task id="LOCAL-00059" summary="BufferedReader">
+      <option name="closed" value="true" />
+      <created>1740469167324</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1740469167324</updated>
+    </task>
+    <task id="LOCAL-00060" summary="Тестирование IO">
+      <option name="closed" value="true" />
+      <created>1740477981792</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1740477981792</updated>
+    </task>
+    <task id="LOCAL-00061" summary="Тестирование IO">
+      <option name="closed" value="true" />
+      <created>1740478557529</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1740478557529</updated>
+    </task>
+    <task id="LOCAL-00062" summary="Тестирование IO">
+      <option name="closed" value="true" />
+      <created>1740483781916</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1740483781916</updated>
+    </task>
+    <task id="LOCAL-00063" summary="Файлы и директории. Класс File">
+      <option name="closed" value="true" />
+      <created>1740484203426</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1740484203426</updated>
+    </task>
+    <task id="LOCAL-00064" summary="Файлы и директории. Класс File">
+      <option name="closed" value="true" />
+      <created>1740489331906</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1740489331906</updated>
+    </task>
+    <task id="LOCAL-00065" summary="Сканирование файловой системы">
+      <option name="closed" value="true" />
+      <created>1740582278227</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1740582278227</updated>
+    </task>
+    <task id="LOCAL-00066" summary="Поиск дубликатов">
+      <option name="closed" value="true" />
+      <created>1740994441635</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1740994441635</updated>
+    </task>
+    <task id="LOCAL-00067" summary="Сканирование файловой системы">
+      <option name="closed" value="true" />
+      <created>1740998335730</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1740998335730</updated>
+    </task>
+    <task id="LOCAL-00068" summary="Валидация параметров запуска">
+      <option name="closed" value="true" />
+      <created>1740999214045</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1740999214045</updated>
+    </task>
+    <task id="LOCAL-00069" summary="Валидация параметров запуска">
+      <option name="closed" value="true" />
+      <created>1741000359757</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1741000359757</updated>
+    </task>
+    <task id="LOCAL-00070" summary="Именованные аргументы">
+      <option name="closed" value="true" />
+      <created>1741012384158</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1741012384158</updated>
+    </task>
+    <task id="LOCAL-00071" summary="Архивировать проект">
+      <option name="closed" value="true" />
+      <created>1741020876484</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1741020876484</updated>
+    </task>
+    <task id="LOCAL-00072" summary="Архивировать проект">
+      <option name="closed" value="true" />
+      <created>1741021226292</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1741021226292</updated>
+    </task>
+    <task id="LOCAL-00073" summary="Валидация параметров запуска">
+      <option name="closed" value="true" />
+      <created>1741021384867</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1741021384867</updated>
+    </task>
+    <task id="LOCAL-00074" summary="Кодировка">
+      <option name="closed" value="true" />
+      <created>1741100740053</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1741100740053</updated>
+    </task>
+    <task id="LOCAL-00075" summary="Кодировка">
+      <option name="closed" value="true" />
+      <created>1741102466287</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1741102466287</updated>
+    </task>
+    <task id="LOCAL-00076" summary="Кодировка">
+      <option name="closed" value="true" />
+      <created>1741102871073</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1741102871073</updated>
+    </task>
+    <task id="LOCAL-00077" summary="123123123123">
+      <option name="closed" value="true" />
+      <created>1741187947527</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1741187947527</updated>
+    </task>
+    <task id="LOCAL-00078" summary="123123123123">
+      <option name="closed" value="true" />
+      <created>1741243388219</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1741243388234</updated>
+    </task>
+    <task id="LOCAL-00079" summary="Scanner">
+      <option name="closed" value="true" />
+      <created>1741259138191</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1741259138191</updated>
+    </task>
+    <task id="LOCAL-00080" summary="Scanner">
+      <option name="closed" value="true" />
+      <created>1741259330849</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1741259330865</updated>
+    </task>
+    <task id="LOCAL-00081" summary="Что такое Socket">
+      <option name="closed" value="true" />
+      <created>1741598267966</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1741598267966</updated>
+    </task>
+    <task id="LOCAL-00082" summary="Бот">
+      <option name="closed" value="true" />
+      <created>1741602779720</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1741602779720</updated>
+    </task>
+    <task id="LOCAL-00083" summary="Что такое Socket">
+      <option name="closed" value="true" />
+      <created>1741611025061</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1741611025061</updated>
+    </task>
+    <task id="LOCAL-00084" summary="Что такое Socket">
+      <option name="closed" value="true" />
+      <created>1741611158968</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1741611158968</updated>
+    </task>
+    <task id="LOCAL-00085" summary="Что такое Socket">
+      <option name="closed" value="true" />
+      <created>1741611314186</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1741611314186</updated>
+    </task>
+    <task id="LOCAL-00086" summary="Бот">
+      <option name="closed" value="true" />
+      <created>1741611697663</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1741611697663</updated>
+    </task>
+    <task id="LOCAL-00087" summary="Log4j. Логирование системы">
+      <option name="closed" value="true" />
+      <created>1741614035144</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1741614035144</updated>
+    </task>
+    <task id="LOCAL-00088" summary="Simple Loggin Facade 4 Java">
+      <option name="closed" value="true" />
+      <created>1741614661816</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1741614661816</updated>
+    </task>
+    <task id="LOCAL-00089" summary="Simple Loggin Facade 4 Java">
+      <option name="closed" value="true" />
+      <created>1741614808408</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1741614808408</updated>
+    </task>
+    <task id="LOCAL-00090" summary="Slf4j - вывод переменных">
+      <option name="closed" value="true" />
+      <created>1741617595822</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1741617595824</updated>
+    </task>
+    <task id="LOCAL-00091" summary="Slf4j - вывод exception">
+      <option name="closed" value="true" />
+      <created>1741618257761</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1741618257761</updated>
+    </task>
+    <task id="LOCAL-00092" summary="Log4j. FileAppender и другие appenders">
+      <option name="closed" value="true" />
+      <created>1741674002248</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1741674002249</updated>
+    </task>
+    <task id="LOCAL-00093" summary="Log4j. FileAppender и другие appenders">
+      <option name="closed" value="true" />
+      <created>1741674212036</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1741674212036</updated>
+    </task>
+    <task id="LOCAL-00094" summary="Log4j. FileAppender и другие appenders">
+      <option name="closed" value="true" />
+      <created>1741674507714</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1741674507714</updated>
+    </task>
+    <task id="LOCAL-00095" summary="Slf4j - вывод exception">
+      <option name="closed" value="true" />
+      <created>1741674592555</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1741674592555</updated>
+    </task>
+    <task id="LOCAL-00096" summary="MySetting">
+      <option name="closed" value="true" />
+      <created>1741784446661</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1741784446661</updated>
+    </task>
+    <task id="LOCAL-00097" summary="MySetting">
+      <option name="closed" value="true" />
+      <created>1741784556733</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1741784556733</updated>
+    </task>
+    <task id="LOCAL-00098" summary="Что такое Сериализация">
+      <option name="closed" value="true" />
+      <created>1741784572022</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1741784572022</updated>
+    </task>
+    <task id="LOCAL-00099" summary="Формат JSON">
+      <option name="closed" value="true" />
+      <created>1741872388295</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1741872388295</updated>
+    </task>
+    <task id="LOCAL-00100" summary="Формат XML">
+      <option name="closed" value="true" />
+      <created>1741875215396</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1741875215396</updated>
+    </task>
+    <task id="LOCAL-00101" summary="Формат XML">
+      <option name="closed" value="true" />
+      <created>1741877712239</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1741877712239</updated>
+    </task>
+    <task id="LOCAL-00102" summary="123">
+      <option name="closed" value="true" />
+      <created>1741879379085</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1741879379085</updated>
+    </task>
+    <task id="LOCAL-00103" summary="JAXB. Преобразование XML в POJO">
+      <option name="closed" value="true" />
+      <created>1741935575766</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1741935575767</updated>
+    </task>
+    <task id="LOCAL-00104" summary="Преобразование JSON в POJO. JsonObject">
+      <option name="closed" value="true" />
+      <created>1741938499833</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1741938499833</updated>
+    </task>
+    <option name="localTasksCounter" value="105" />
+    <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.csv" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Файлы и директории" />
+    <MESSAGE value="Тестирование IO" />
+    <MESSAGE value="Файлы и директории. Класс File" />
+    <MESSAGE value="Поиск дубликатов" />
+    <MESSAGE value="Сканирование файловой системы" />
+    <MESSAGE value="Именованные аргументы" />
+    <MESSAGE value="Архивировать проект" />
+    <MESSAGE value="Валидация параметров запуска" />
+    <MESSAGE value="Кодировка" />
+    <MESSAGE value="123123123123" />
+    <MESSAGE value="Scanner" />
+    <MESSAGE value="Что такое Socket" />
+    <MESSAGE value="Бот" />
+    <MESSAGE value="Log4j. Логирование системы" />
+    <MESSAGE value="Simple Loggin Facade 4 Java" />
+    <MESSAGE value="Slf4j - вывод переменных" />
+    <MESSAGE value="Log4j. FileAppender и другие appenders" />
+    <MESSAGE value="Slf4j - вывод exception" />
+    <MESSAGE value="MySetting" />
+    <MESSAGE value="Что такое Сериализация" />
+    <MESSAGE value="Формат JSON" />
+    <MESSAGE value="Формат XML" />
+    <MESSAGE value="123" />
+    <MESSAGE value="JAXB. Преобразование XML в POJO" />
+    <MESSAGE value="Преобразование JSON в POJO. JsonObject" />
+    <option name="LAST_COMMIT_MESSAGE" value="Преобразование JSON в POJO. JsonObject" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/ru/job4j/iterator/ArrayIt.java</url>
+          <line>13</line>
+          <properties class="ru.job4j.iterator.ArrayIt" method="hasNext">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/ru/job4j/iterator/ArrayIt.java</url>
+          <line>18</line>
+          <properties class="ru.job4j.iterator.ArrayIt" method="next">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/ru/job4j/iterator/ArrayIt.java</url>
+          <line>8</line>
+          <properties class="ru.job4j.iterator.ArrayIt" method="&lt;init&gt;">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/job4j_design$Search.ic" NAME="Search Coverage Results" MODIFIED="1740582202646" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>ru.job4j.io.*</FILTER>
+    </SUITE>
+  </component>
+</project>

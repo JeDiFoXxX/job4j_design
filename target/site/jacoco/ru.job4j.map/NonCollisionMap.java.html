@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ru"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>NonCollisionMap.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">job4j_design</a> &gt; <a href="index.source.html" class="el_package">ru.job4j.map</a> &gt; <span class="el_source">NonCollisionMap.java</span></div><h1>NonCollisionMap.java</h1><pre class="source lang-java linenums">package ru.job4j.map;
+
+import java.util.ConcurrentModificationException;
+import java.util.NoSuchElementException;
+import java.util.Iterator;
+import java.util.Objects;
+
+<span class="fc" id="L8">public class NonCollisionMap&lt;K, V&gt; implements SimpleMap&lt;K, V&gt; {</span>
+    private static final float LOAD_FACTOR = 0.75f;
+<span class="fc" id="L10">    private int capacity = 8;</span>
+<span class="fc" id="L11">    private int count = 0;</span>
+<span class="fc" id="L12">    private int modCount = 0;</span>
+<span class="fc" id="L13">    private MapEntry&lt;K, V&gt;[] table = new MapEntry[capacity];</span>
+
+    @Override
+    public boolean put(K key, V value) {
+<span class="fc" id="L17">        expand();</span>
+<span class="fc" id="L18">        int index = getIndex(key);</span>
+<span class="fc bfc" id="L19" title="All 2 branches covered.">        boolean rsl = table[index] == null;</span>
+<span class="fc bfc" id="L20" title="All 2 branches covered.">        if (rsl) {</span>
+<span class="fc" id="L21">            table[index] = new MapEntry&lt;&gt;(key, value);</span>
+<span class="fc" id="L22">            count++;</span>
+<span class="fc" id="L23">            modCount++;</span>
+        }
+<span class="fc" id="L25">        return rsl;</span>
+    }
+
+    @Override
+    public V get(K key) {
+<span class="fc" id="L30">        V rsl = null;</span>
+<span class="fc" id="L31">        int index = getIndex(key);</span>
+<span class="fc bfc" id="L32" title="All 4 branches covered.">        if (table[index] != null &amp;&amp; isKeyMatch(index, key)) {</span>
+<span class="fc" id="L33">            rsl = table[index].value;</span>
+        }
+<span class="fc" id="L35">        return rsl;</span>
+    }
+
+    @Override
+    public boolean remove(K key) {
+<span class="fc" id="L40">        boolean rsl = false;</span>
+<span class="fc" id="L41">        int index = getIndex(key);</span>
+<span class="pc bpc" id="L42" title="1 of 4 branches missed.">        if (table[index] != null &amp;&amp; isKeyMatch(index, key)) {</span>
+<span class="fc" id="L43">            table[index] = null;</span>
+<span class="fc" id="L44">            count--;</span>
+<span class="fc" id="L45">            modCount++;</span>
+<span class="fc" id="L46">            rsl = true;</span>
+        }
+<span class="fc" id="L48">        return rsl;</span>
+    }
+
+    @Override
+    public Iterator&lt;K&gt; iterator() {
+<span class="fc" id="L53">        return new Iterator&lt;&gt;() {</span>
+<span class="fc" id="L54">            final int expectedModCount = modCount;</span>
+<span class="fc" id="L55">            int index = 0;</span>
+<span class="fc" id="L56">            int rsl = 0;</span>
+
+            @Override
+            public boolean hasNext() {
+<span class="fc bfc" id="L60" title="All 2 branches covered.">                if (expectedModCount != modCount) {</span>
+<span class="fc" id="L61">                    throw new ConcurrentModificationException();</span>
+                }
+<span class="fc bfc" id="L63" title="All 2 branches covered.">                return index &lt; count;</span>
+            }
+
+            @Override
+            public K next() {
+<span class="fc bfc" id="L68" title="All 2 branches covered.">                if (!hasNext()) {</span>
+<span class="fc" id="L69">                    throw new NoSuchElementException();</span>
+                }
+<span class="fc bfc" id="L71" title="All 2 branches covered.">                while (table[rsl] == null) {</span>
+<span class="fc" id="L72">                    rsl++;</span>
+                }
+<span class="fc" id="L74">                index++;</span>
+<span class="fc" id="L75">                return table[rsl++].key;</span>
+            }
+        };
+    }
+
+    private int hash(int hashCode) {
+<span class="fc" id="L81">        return hashCode ^ (hashCode &gt;&gt;&gt; 16);</span>
+    }
+
+    private int indexFor(int hash) {
+<span class="fc" id="L85">        return hash &amp; (capacity - 1);</span>
+    }
+
+    private void expand() {
+<span class="fc bfc" id="L89" title="All 2 branches covered.">        if (count &gt;= (int) (capacity * LOAD_FACTOR)) {</span>
+<span class="fc" id="L90">            capacity *= 2;</span>
+<span class="fc" id="L91">            MapEntry&lt;K, V&gt;[] newTable = new MapEntry[capacity];</span>
+<span class="fc bfc" id="L92" title="All 2 branches covered.">            for (MapEntry&lt;K, V&gt; entry : table) {</span>
+<span class="fc bfc" id="L93" title="All 2 branches covered.">                if (entry != null) {</span>
+<span class="fc" id="L94">                    newTable[getIndex(entry.key)] = entry;</span>
+                }
+            }
+<span class="fc" id="L97">            table = newTable;</span>
+        }
+<span class="fc" id="L99">    }</span>
+
+    private int getIndex(K key) {
+<span class="fc" id="L102">        return indexFor(hash(Objects.hashCode(key)));</span>
+    }
+
+    private boolean isKeyMatch(int index, K key) {
+<span class="pc bpc" id="L106" title="1 of 4 branches missed.">        return Objects.hashCode(table[index].key) == Objects.hashCode(key) &amp;&amp; Objects.equals(table[index].key, key);</span>
+    }
+
+    private static class MapEntry&lt;K, V&gt; {
+        K key;
+        V value;
+
+<span class="fc" id="L113">        public MapEntry(K key, V value) {</span>
+<span class="fc" id="L114">            this.key = key;</span>
+<span class="fc" id="L115">            this.value = value;</span>
+<span class="fc" id="L116">        }</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>

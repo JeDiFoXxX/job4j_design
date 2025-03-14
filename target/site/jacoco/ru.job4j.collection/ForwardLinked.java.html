@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ru"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>ForwardLinked.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">job4j_design</a> &gt; <a href="index.source.html" class="el_package">ru.job4j.collection</a> &gt; <span class="el_source">ForwardLinked.java</span></div><h1>ForwardLinked.java</h1><pre class="source lang-java linenums">package ru.job4j.collection;
+
+import java.util.ConcurrentModificationException;
+import java.util.Iterator;
+import java.util.NoSuchElementException;
+import java.util.Objects;
+
+<span class="fc" id="L8">public class ForwardLinked&lt;T&gt; implements Iterable&lt;T&gt; {</span>
+    private int size;
+    private int modCount;
+    private Node&lt;T&gt; head;
+
+    public void add(T value) {
+<span class="fc" id="L14">        Node&lt;T&gt; l = head;</span>
+<span class="fc" id="L15">        final Node&lt;T&gt; newNode = new Node&lt;&gt;(value, null);</span>
+<span class="fc bfc" id="L16" title="All 2 branches covered.">        if (l == null) {</span>
+<span class="fc" id="L17">            head = newNode;</span>
+        } else {
+<span class="fc bfc" id="L19" title="All 2 branches covered.">            while (l.next != null) {</span>
+<span class="fc" id="L20">                l = l.next;</span>
+            }
+<span class="fc" id="L22">            l.next = newNode;</span>
+        }
+<span class="fc" id="L24">        size++;</span>
+<span class="fc" id="L25">        modCount++;</span>
+<span class="fc" id="L26">    }</span>
+
+    public T get(int index) {
+<span class="fc" id="L29">        Objects.checkIndex(index, size);</span>
+<span class="fc" id="L30">        Node&lt;T&gt; element = head;</span>
+<span class="fc bfc" id="L31" title="All 2 branches covered.">        for (int i = 0; i != index; i++) {</span>
+<span class="fc" id="L32">            element = element.next;</span>
+        }
+<span class="fc" id="L34">        return element.item;</span>
+    }
+
+    public T deleteFirst() {
+<span class="fc bfc" id="L38" title="All 2 branches covered.">        if (size == 0) {</span>
+<span class="fc" id="L39">            throw new NoSuchElementException();</span>
+        }
+<span class="fc" id="L41">        final T value = head.item;</span>
+<span class="fc" id="L42">        final Node&lt;T&gt; newNode = head.next;</span>
+<span class="fc" id="L43">        head.item = null;</span>
+<span class="fc" id="L44">        head.next = null;</span>
+<span class="fc" id="L45">        head = newNode;</span>
+<span class="fc" id="L46">        size--;</span>
+<span class="fc" id="L47">        modCount++;</span>
+<span class="fc" id="L48">        return value;</span>
+    }
+
+    public void addFirst(T value) {
+<span class="fc" id="L52">        head = new Node&lt;&gt;(value, head);</span>
+<span class="fc" id="L53">        size++;</span>
+<span class="fc" id="L54">        modCount++;</span>
+<span class="fc" id="L55">    }</span>
+
+    @Override
+    public Iterator&lt;T&gt; iterator() {
+<span class="fc" id="L59">        return new Iterator&lt;T&gt;() {</span>
+<span class="fc" id="L60">            final int expectedModCount = modCount;</span>
+<span class="fc" id="L61">            Node&lt;T&gt; start = head;</span>
+
+            @Override
+            public boolean hasNext() {
+<span class="fc bfc" id="L65" title="All 2 branches covered.">                if (expectedModCount != modCount) {</span>
+<span class="fc" id="L66">                    throw new ConcurrentModificationException();</span>
+                }
+<span class="fc bfc" id="L68" title="All 2 branches covered.">                return start != null;</span>
+            }
+
+            @Override
+            public T next() {
+<span class="pc bpc" id="L73" title="1 of 2 branches missed.">                if (!hasNext()) {</span>
+<span class="nc" id="L74">                    throw new NoSuchElementException();</span>
+                }
+<span class="fc" id="L76">                T value = start.item;</span>
+<span class="fc" id="L77">                start = start.next;</span>
+<span class="fc" id="L78">                return value;</span>
+            }
+        };
+    }
+
+    private static class Node&lt;T&gt; {
+        private T item;
+        private Node&lt;T&gt; next;
+
+<span class="fc" id="L87">        Node(T element, Node&lt;T&gt; next) {</span>
+<span class="fc" id="L88">            this.item = element;</span>
+<span class="fc" id="L89">            this.next = next;</span>
+<span class="fc" id="L90">        }</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>
