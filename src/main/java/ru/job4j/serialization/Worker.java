@@ -19,7 +19,8 @@ public final class Worker {
     @XmlAttribute
     private boolean active;
 
-    public Worker() { }
+    public Worker() {
+    }
 
     public Worker(String name, Contact contact, double salary, String[] tasks, boolean active) {
         this.name = name;
@@ -27,6 +28,26 @@ public final class Worker {
         this.salary = salary;
         this.tasks = tasks;
         this.active = active;
+    }
+
+    public String[] getTasks() {
+        return tasks;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public Contact getContact() {
+        return contact;
+    }
+
+    public double getSalary() {
+        return salary;
+    }
+
+    public boolean isActive() {
+        return active;
     }
 
     @Override
