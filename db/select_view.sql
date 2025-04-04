@@ -1,0 +1,1 @@
+select * from inactive_orders_after_2025_01_01;
