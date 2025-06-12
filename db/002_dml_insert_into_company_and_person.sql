@@ -1,0 +1,30 @@
+INSERT INTO company (id, name) VALUES
+(1, 'Apple'),
+(2, 'Microsoft'),
+(3, 'Google'),
+(4, 'Amazon'),
+(5, 'Meta'),
+(6, 'Netflix'),
+(7, 'Tesla');
+
+INSERT INTO person (id, name, company_id) VALUES
+(1, 'John Doe', 1),
+(2, 'Alice Smith', 2),
+(3, 'Bob Johnson', 3),
+(4, 'Maria Lee', 4),
+(5, 'David Kim', 4),
+(6, 'Elena Ivanova', 5),
+(7, 'Tom Hardy', 6),
+(8, 'Sophie Turner', 7),
+(9, 'Ivan Petrov', 3),
+(10, 'Anna Kuznetsova', 2),
+(11, 'Steve Jobs', 1),
+(12, 'Tim Cook', 1),
+(13, 'Angela Ahrendts', 1),
+(14, 'Phil Schiller', 1),
+(15, 'Craig Federighi', 1),
+(16, 'Reed Hastings', 6),
+(17, 'Ted Sarandos', 6),
+(18, 'Cindy Holland', 6),
+(19, 'Greg Peters', 6),
+(20, 'Spencer Neumann', 6);
